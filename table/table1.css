@@ -1,0 +1,37 @@
+p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 40px;
+}
+
+table {
+  margin: 20px auto;
+}
+
+.demo01 th {
+  background: #e9727e;
+  border: solid 1px #ccc;
+  color: #fff;
+  padding: 10px;
+}
+
+.demo01 td {
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .demo01 {
+    width: 80%;
+  }
+  .demo01 th, .demo01 td {
+    border-bottom: none;
+    display: block;
+    width: 100%;
+  }
+}

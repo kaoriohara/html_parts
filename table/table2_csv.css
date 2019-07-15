@@ -1,0 +1,58 @@
+.CSVTable {
+  width: 100%;
+  border-right: #3EB1C6 solid 1px;
+  border-collapse: collapse;
+}
+
+.CSVTable thead th {
+  background: #3EB1C6;
+  color: #FFF;
+  padding: 10px 15px;
+  border-right: #FFF solid 1px;
+  border-bottom: #FFF solid 1px;
+}
+
+.CSVTable thead th:last-child {
+  border-right: #3EB1C6 solid 1px;
+}
+
+.CSVTable tbody th {
+  background: #3EB1C6;
+  color: #FFF;
+  padding: 10px 15px;
+  border-bottom: #FFF solid 1px;
+  vertical-align: top;
+}
+
+.CSVTable tbody tr:last-child th {
+  border-bottom: #3EB1C6 solid 1px;
+}
+
+.CSVTable tbody td {
+  background: #FFF;
+  padding: 10px 15px;
+  border-left: #3EB1C6 solid 1px;
+  border-bottom: #3EB1C6 solid 1px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 640px) {
+  .CSVTable thead {
+    display: none;
+  }
+  .CSVTable tbody th {
+    display: block;
+  }
+  .CSVTable tbody td {
+    display: block;
+  }
+  .CSVTable tbody td::before {
+    content: attr(label);
+    float: left;
+    clear: both;
+    font-weight: bold;
+  }
+  .CSVTable tbody td p {
+    padding-left: 6em;
+  }
+}
